@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header/>
+    <NavBar/>
     <router-view/>
   </div>
 </template>
@@ -10,13 +10,13 @@
 import '@/styles/app.scss';
 
 // import script
-import Header from '@/components/Header.vue';
+import NavBar from '@/components/NavBar.vue';
 
 // export
 export default {
-  name: 'about',
+  name: 'app',
   components: {
-    Header,
+    NavBar,
   },
 };
 </script>

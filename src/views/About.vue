@@ -8,7 +8,7 @@
 
 <script>
 // import styles
-import '@/styles/header.scss';
+import '@/styles/navbar.scss';
 
 // more or less default export
 export default {

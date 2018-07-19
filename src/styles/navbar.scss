@@ -1,0 +1,31 @@
+/* styles specific to navbar */
+
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navMenu {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+.navlinks {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.navlinks a {
+  font-size: 18px;
+  font-size: 1.8rem;
+  padding: 0 0.5rem;
+  list-style-type: none;
+}
