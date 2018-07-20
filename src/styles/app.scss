@@ -1,28 +1,32 @@
 /* general purpose styles */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500');
 
+html, body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
 html {
   font-size: 62.5%; // so 1.0rem = 10px
-  height: 100%;
-  width: 100%;
 }
 
 body {
-  height: 100%;
-  width: 100%;
+  background-color: #121315;
+  color: #F3F3F3;
+  font-family: 'Work Sans', 'Avenir', Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 
 #app {
-  background-color: #121315;
-  font-family: 'Work Sans', 'Avenir', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   // color: #2c3e50;
-  color: #F3F3F3;
   height: 100%;
-  overflow-x: hidden;
+  margin: 21px 30px;
   width: 100%;
 }
 
