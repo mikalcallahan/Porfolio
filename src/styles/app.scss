@@ -1,5 +1,6 @@
 /* general purpose styles */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500');
+@import '@/styles/_colors.scss';
 
 html, body {
   height: 100%;
@@ -16,8 +17,8 @@ html {
 }
 
 body {
-  background-color: #121315;
-  color: #F3F3F3;
+  background-color: $background-color;
+  color: $font-color;
   font-family: 'Work Sans', 'Avenir', Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
@@ -27,7 +28,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 
@@ -39,7 +40,7 @@ h1 {
 h4 {
   font-size: 20px;
   font-size: 2.0rem;
-  letter-spacing: 1.0rem;
+  letter-spacing: 0.05rem;
 }
 
 // see if i don't need this

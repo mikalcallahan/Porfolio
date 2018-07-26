@@ -1,16 +1,13 @@
 <template>
   <!-- navbar layout (subject to change) -->
   <nav class='navbar'>
+    <span class='logo'>
     <h4> mikal. </h4>
-    <span @click='toggleNav' class='navToggle'> veggieburger </span>
-    <div v-show='navIsOpen' class='navMenu'>
-      <ul  class='navlinks'>
-        <li> <router-link to='/'> à propos</router-link> </li>
-        <li> <router-link to='/projects'>projets</router-link> </li>
-        <li> <router-link to='/contact'>contacte</router-link> </li>
-        <li> li one </li>
-      </ul>
-    </div>
+    </span>
+    <span @click='toggleNav' class='navToggle'>
+      <img id='navToggle' src='@/assets/veggieburger.svg'><img>
+    </span>
+    <NavMenu v-show='navIsOpen'/>
   </nav>
 </template>
 <script>
@@ -18,13 +15,14 @@
 import '@/styles/navbar.scss';
 
 // import components
+import NavMenu from '@/components/NavMenu.vue';
 import { showAt, hideAt } from 'vue-breakpoints';
 
 // default export
 export default {
   name: 'NavBar',
   props: [],
-  components: { showAt, hideAt },
+  components: { NavMenu, showAt, hideAt },
   data() {
     return {
       navIsOpen: false,
