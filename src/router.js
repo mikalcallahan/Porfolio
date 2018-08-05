@@ -2,8 +2,9 @@ import Vue from 'vue';
 import Router from 'vue-router';
 // import Home from './views/Home.vue';
 import About from './views/About.vue';
-import Projects from './views/Projects.vue';
-import Contact from './views/Contact.vue';
+// import Projects from './views/Projects.vue';
+// import Contact from './views/Contact.vue';
+import ComingSoon from './views/ComingSoon.vue';
 
 Vue.use(Router);
 
@@ -22,12 +23,12 @@ export default new Router({
     {
       path: '/projects',
       name: 'projects',
-      component: Projects,
+      component: ComingSoon,
     },
     {
       path: 'contact',
       name: 'contact',
-      component: Contact,
+      component: ComingSoon,
     },
   ],
 });

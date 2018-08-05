@@ -1,3 +1,5 @@
+<!-- App.vue -->
+
 <template>
   <div id="app">
     <NavBar/>
@@ -6,6 +8,7 @@
 </template>
 
 <script>
+
 // import general styles
 import '@/styles/app.scss';
 

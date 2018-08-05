@@ -1,3 +1,5 @@
+<!-- NavBar.vue -->
+
 <template>
   <!-- navbar layout (subject to change) -->
   <nav class='navbar'>
@@ -31,6 +33,7 @@ export default {
   methods: {
     toggleNav() {
       this.navIsOpen = !this.navIsOpen;
+      // this.$store.state.navIsOpen = !this.$store.state.navIsOpen; // prepfare for state
     },
   },
 };

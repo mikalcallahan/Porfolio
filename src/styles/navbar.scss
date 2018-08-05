@@ -3,11 +3,14 @@
 
 .navbar {
   align-items: flex-start;
+  // background-color: red;
   display: flex;
+  grid-column: 2 / 25;
+  grid-row: 1;
   justify-content: space-between;
   margin-top: 1%;
   height: auto;
-  width: 95%;
+  width: 100%;
 }
 
 #navToggle:hover {
