@@ -15,6 +15,6 @@ export default new Vuex.Store({
 
   },
   getters: {
-    getNavStatus: state => {  return state.navIsOpen; }
+    getNavStatus: state => (state.navIsOpen),
   },
 });
