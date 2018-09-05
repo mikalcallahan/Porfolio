@@ -1,0 +1,11 @@
+/* Import General Purpose */
+@import '@/styles/_colors.scss';
+
+.coming-soon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
