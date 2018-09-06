@@ -12,12 +12,17 @@
   "dependencies": {
     "animejs": "^2.2.0",
     "es6-promise": "^4.2.4",
+    "eslint": "^5.5.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-vue": "^4.7.1",
+    "moment": "^2.22.2",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.16",
     "vue-breakpoints": "^1.1.0",
     "vue-lottie": "^0.2.1",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "webpack": "^4.17.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.5",

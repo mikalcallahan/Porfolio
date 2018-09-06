@@ -8,4 +8,18 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  .message {
+    // position: absolute;
+  }
+  .en {
+    position: absolute;
+    opacity: 0;
+  }
+  .fr {
+    position: absolute;
+    opacity: 0;
+  }
+  .elli {
+    // position: relative;
+  }
 }

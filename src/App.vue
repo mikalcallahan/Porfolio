@@ -4,6 +4,7 @@
   <div id="app">
     <!-- <NavBar/> -->
     <router-view/>
+    <Footer/>
   </div>
 </template>
 
@@ -14,12 +15,13 @@ import '@/styles/app.scss';
 
 // import script
 import NavBar from '@/components/NavBar.vue';
+import Footer from '@/components/Footer.vue';
 
 // export
 export default {
   name: 'app',
   components: {
-    NavBar,
+    NavBar, Footer,
   },
 };
 </script>
