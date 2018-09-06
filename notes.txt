@@ -1,5 +1,0 @@
-Navbar
-- svg hover over navTrigger to equal size
-- turn navTrigger to X as an animation
-
-
