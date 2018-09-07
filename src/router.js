@@ -16,6 +16,7 @@ Vue.use(Router);
 // Use Google Analtyics
 Vue.use(VueAnalytics, {
   id: keys.GA_KEY,
+  // customResourceURL: 'https://www.google-analytics.com/analytics_debug.js',
 });
 
 export default new Router({
