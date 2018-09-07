@@ -1,6 +1,14 @@
-# portfolio
+# Portfolio Website
+Updated portfolio website for 2018
 
-## Project setup
+## The only change you should have to make is put your google analytics key in a config.js file like so:
+```
+var config = {
+  GA_KEY : 'UA-xxxxxxxxx-x',
+}
+```
+
+## Portfolio setup
 ```
 yarn install
 ```
@@ -13,19 +21,4 @@ yarn run serve
 ### Compiles and minifies for production
 ```
 yarn run build
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Run your unit tests
-```
-yarn run test:unit
-```
-
-### Run your end-to-end tests
-```
-yarn run test:e2e
 ```

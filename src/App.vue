@@ -13,11 +13,11 @@
 // import general styles
 import '@/styles/app.scss';
 
-// import script
+// import Components
 import NavBar from '@/components/NavBar.vue';
 import Footer from '@/components/Footer.vue';
 
-// export
+// Export app
 export default {
   name: 'app',
   components: {
