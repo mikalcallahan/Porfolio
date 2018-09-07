@@ -18,8 +18,19 @@
 
 <script>
 import '@/styles/comingsoon.scss';
-import anime from 'animejs';
 
+// Import API keys
+import keys from '@/config';
+
+// Import components
+import Vue from 'vue';
+import anime from 'animejs';
+import VueAnalytics from 'vue-analytics';
+
+Vue.use(VueAnalytics, {
+  id: keys.GA_KEY,
+  // customResourceURL: 'https://www.google-analytics.com/analytics_debug.js',
+});
 
 export default {
   name: 'ComingSoon',
@@ -63,6 +74,9 @@ export default {
           return i * 100;
         },
       });
+    },
+    track() {
+      this.$ga.page('/');
     },
   },
   mounted() {
