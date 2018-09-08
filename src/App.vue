@@ -9,7 +9,6 @@
 </template>
 
 <script>
-
 // import general styles
 import '@/styles/app.scss';
 
@@ -21,7 +20,8 @@ import Footer from '@/components/Footer.vue';
 export default {
   name: 'app',
   components: {
-    NavBar, Footer,
+    NavBar,
+    Footer,
   },
 };
 </script>

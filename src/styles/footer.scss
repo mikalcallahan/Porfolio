@@ -1,20 +1,58 @@
 /* Footer Styling */
 
+@import '@/styles/_breakpoints.scss';
+
 .footer {
   align-items: center;
   background-color: white;
   color: black;
   display: -webkit-box;
   display: flex;
+  flex-wrap: nowrap;
   grid-column: 1 / 13;
   grid-row: 12;
+  justify-content: space-between;
   padding: 0 2.5%;
   width: 95%;
-  #thisMoment {
-    font-size: 24px;
-    font-size: 2.4rem;
-    font-weight: 500;
-    letter-spacing: 0.02rem;
+}
+#thisMoment {
+  width: 50%;
+  @include breakpoint(phone) {
+    width: 100%;
   }
 }
-
+#footerLinks {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  width: 50%;
+  li {
+    display: flex;
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    justify-content: flex-end;
+    padding-left: 2.5rem;
+    width: auto;
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline; 
+    }
+  }
+  @include breakpoint(phone) {
+    display: none;
+  }
+}
+/*
+@media (max-width: 605px) {
+  #thisMoment {
+    width: 100%;
+  }
+  #footerLinks {
+    display: none;
+  }
+}
+*/

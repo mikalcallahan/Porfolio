@@ -5,10 +5,10 @@ import VueAnalytics from 'vue-analytics'; // import vue analytics
 import keys from '@/config'; // import API keys
 
 // import all views
-import About from '@/views/About.vue';
+const About = () => import('@/views/About.vue');
 // import Projects from './views/Projects.vue';
 // import Contact from './views/Contact.vue';
-import ComingSoon from '@/views/ComingSoon.vue';
+const ComingSoon = () => import('@/views/ComingSoon.vue');
 
 // Use router
 Vue.use(Router);

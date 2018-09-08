@@ -1,4 +1,5 @@
 /* general purpose styles */
+@import '@/styles/_breakpoints.scss';
 @import '@/styles/_colors.scss';
 @import '@/styles/_fonts.scss';
 
@@ -20,7 +21,7 @@ body {
   background-color: $background-color;
   color: $font-color;
   font-family: 'Work Sans', 'Avenir', Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 #app {
@@ -43,13 +44,13 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 36px;
+  font-size: 3.6rem;
 }
 
 h3 {
-  font-size: 20px;
-  font-size: 2.0rem;
+  font-size: 22px;
+  font-size: 2.2rem;
 }
 
 h4 {
@@ -66,6 +67,10 @@ p {
 li {
   font-size: 16px;
   font-size: 1.6rem;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 // see if i don't need this
