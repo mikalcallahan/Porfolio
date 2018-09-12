@@ -1,8 +1,7 @@
 <!-- App.vue -->
-
 <template>
   <div id="app">
-    <!-- <NavBar/> -->
+    <Header/>
     <router-view/>
     <Footer/>
   </div>
@@ -13,14 +12,14 @@
 import '@/styles/app.scss';
 
 // import Components
-import NavBar from '@/components/NavBar.vue';
+import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 
 // Export app
 export default {
   name: 'app',
   components: {
-    NavBar,
+    Header,
     Footer,
   },
 };

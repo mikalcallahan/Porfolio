@@ -27,17 +27,19 @@ export default {
           name: 'webring',
           url: 'https://webring.xxiivv.com/#random',
           target: '_blank',
-          key: 'this.getKey()',
+          key: 0,
         },
         {
           name: 'instagram',
           url: 'https://www.instagram.com/mikalcallahan/',
           target: '_blank',
+          key: 1,
         },
         {
           name: 'github',
           url: 'https://www.github.com/mikalcallahan/',
           target: '_blank',
+          key: 2,
         },
       ],
     };
