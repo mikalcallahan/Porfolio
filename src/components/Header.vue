@@ -3,9 +3,10 @@
   <header class='header'>
     <h3 id='logo'>Mikal</h3>
     <ul id='headerLinks'>
-      <li v-for='link in links' :key='link.key'>
-        <a :href='link.url'>{{link.name}}</a>
-      </li>
+      <router-link tag='li' v-for='link in links' :to='link.url' :key='link.key'>
+        <a>{{link.name}}</a>
+        <!-- <a :href='link.url'>{{link.name}}</a> -->
+      </router-link>
     </ul>
   </header>
 </template>
@@ -22,12 +23,12 @@ export default {
       links: [
         {
           name: 'about',
-          url: '/about',
+          url: '/About',
           key: 0,
         },
         {
           name: 'portfolio',
-          url: '/portfolio',
+          url: '/Portfolio',
           key: 1,
         },
       ],

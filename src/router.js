@@ -5,10 +5,11 @@ import VueAnalytics from 'vue-analytics'; // import vue analytics
 import keys from '@/config'; // import API keys
 
 // import all views
+// import Portfolio from '@/views/Portfolio.vue';
+
 const About = () => import('@/views/About.vue');
-// import Projects from './views/Projects.vue';
-// import Contact from './views/Contact.vue';
 const ComingSoon = () => import('@/views/ComingSoon.vue');
+// import Contact from './views/Contact.vue';
 
 // Use router
 Vue.use(Router);
@@ -31,9 +32,14 @@ export default new Router({
       name: 'Home',
       component: ComingSoon,
     },
+    /*    {
+      path: '/portfolio',
+      name: 'Portfolio',
+      component: Portfolio,
+    }, */
     {
       path: '/about',
-      name: 'about',
+      name: 'About',
       component: About,
     },
     {
