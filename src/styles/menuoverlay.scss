@@ -1,0 +1,48 @@
+/* Menu Overlay CSS */
+
+@import '@/styles/_breakpoints.scss';
+@import '@/styles/_colors.scss';
+
+.menuOverlay {
+  background-color: $background-color;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: flex-end;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.button--closeMenu {
+  font-size: 20px;
+  font-size: 2.0rem;
+  padding: 2.5rem 2.5rem 0 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.navigation--full-menu {
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 20px;
+  font-size: 2.0rem;
+  height: 100%;
+  justify-content: center;
+  line-height: 41px;
+  line-height: 4.1rem;
+  padding-left: 8.4rem;
+  width: 100%;
+  li a {
+    color: $font-color;
+    text-decoration: none;  
+  }
+  @include breakpoint(small) {
+    // display: grid;
+    // grid-column: 
+    align-items: center;
+    padding-left: 0;
+  }
+}
