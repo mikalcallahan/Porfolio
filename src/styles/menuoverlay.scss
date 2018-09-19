@@ -12,19 +12,27 @@
   left: 0;
   position: fixed;
   top: 0;
+  width: 0%;
+  z-index: 10;
+}
+
+.menuOverlay--open {
   width: 100%;
 }
 
 .button--closeMenu {
+  cursor: pointer;
   font-size: 20px;
   font-size: 2.0rem;
   padding: 2.5rem 2.5rem 0 0;
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 10;
 }
 
 .navigation--full-menu {
+  // display: none;
   align-items: flex-start;
   flex-direction: column;
   font-size: 20px;

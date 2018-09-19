@@ -1,13 +1,22 @@
+<!-- Portfolio.vue -->
 <template>
-  <pdf src='@/assets/portfolio.pdf' :page=1></pdf>
+  <div class='portfolio'>
+    <ul class='project-list'>
+      <li class='project'>
+        <h0 class='project__name'>Food Gorilla</h0>
+        <div class='project__image'>
+          <img src='@/assets/foodgorilla.png'>
+        </div>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
-import pdf from 'vue-pdf';
+import '@/styles/portfolio.scss';
 
 export default {
   components: {
-    pdf,
   },
 };
 </script>

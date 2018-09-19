@@ -7,7 +7,7 @@
     <h4> mikal. </h4>
     </span>
     <span @click='toggleNav' class='navToggle'>
-      <img id='navToggle' src='@/assets/veggieburger.svg'><img>
+      <img id='navToggle' src='@/assets/veggieburger.svg'>
     </span>
     <NavMenu v-show='navIsOpen'/>
   </nav>

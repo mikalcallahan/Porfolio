@@ -2,8 +2,8 @@
 
 <template>
   <div class='menuOverlay'>
-    <span class='button button--closeMenu' @click='changeState'> X </span>
-  <ul class='navigation navigation--full-menu'>
+    <span class='button button--closeMenu' @click='animateMenu' v-show='getMenuStatus'> X </span>
+  <ul class='navigation navigation--full-menu' v-show='getMenuStatus'>
     <router-link
       tag='li'
       v-for='link in routerLinks'
@@ -26,12 +26,17 @@
 // styles
 import '@/styles/menuoverlay.scss';
 
+import anime from 'animejs';
+import { mapGetters } from 'vuex';
+
 export default {
   name: 'NavMenu',
   props: {},
   components: {},
-  /*
   computed: {
+    ...mapGetters(['getMenuStatus']),
+  },
+  /*
     inputListeners: function () {
       var vm = this
       // `Object.assign` merges objects together to form a new object
@@ -47,9 +52,7 @@ export default {
           }
         }
       )
-    }
-  },
-  */
+    } */
   data() {
     return {
       routerLinks: [
@@ -88,8 +91,16 @@ export default {
   },
   methods: {
     changeState() {
-      // console.log(this.$store.state.menuIsOpen);
       this.$store.commit('toggleMenu');
+    },
+    animateMenu() {
+      anime({
+        targets: '.menuOverlay',
+        width: '0%',
+        easing: 'easeInOutCirc',
+        duration: 500,
+      });
+      this.changeState();
     },
   },
 };

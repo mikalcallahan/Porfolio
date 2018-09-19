@@ -7,26 +7,21 @@
   color: white;
   display: flex;
   flex-wrap: nowrap;
-  grid-column: 1 / 13;
+  grid-column: col / 13;
   grid-row: 1;
   justify-content: space-between;
   padding: 0 2.5%;
   width: 95%;
+  z-index: 10;
 }
 
-#logo {
-  width: 50%;
-  @include breakpoint(phone) {
-    width: 75%;
-  }
-}
-
-#headerLinks {
+.navigation {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
-  width: 50%;
-  li {
+  margin: 0;
+  padding: 0;
+  .navigationLinks {
     display: flex;
     font-size: 12px;
     font-size: 1.2rem;
@@ -42,4 +37,22 @@
       text-decoration: underline;
     }
   }
+  .navigationLinks--nav-desktop {
+    display: none;
+    @include breakpoint(medium) {
+      display: inherit;
+    }
+  }
+}
+
+.navigation--router-links {
+  margin-left: auto;
+}
+
+.button--sitemap {
+  padding-left: 2.5rem;
+}
+
+.navigation--full-menu {
+  // display: none;
 }

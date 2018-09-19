@@ -1,18 +1,22 @@
 @mixin breakpoint($device) {
-  @if $device == desktop-large {
-    @media (max-width: 1600px) {
+  @if $device == xlarge {
+    @media (min-width: 1680px) {
       @content;
     }
-  } @else if $device == desktop {
-    @media (max-width: 1250px) {
+  } @else if $device == large {
+    @media (min-width: 1280px) {
       @content;
     }
-  } @else if $device == tablet {
-    @media (max-width: 960px) {
+  } @else if $device == medium {
+    @media (min-width: 980px) {
       @content;
     }
-  } @else if $device == phone {
-    @media (max-width: 605px) {
+  } @else if $device == small {
+    @media (min-width: 736px) {
+      @content;
+    }
+  } @else if $device == xsmall {
+    @media (min-width: 480px) {
       @content;
     }
   }

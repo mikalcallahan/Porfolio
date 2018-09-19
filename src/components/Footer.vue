@@ -2,7 +2,7 @@
 <template>
   <footer class='footer'>
     <h3 id='thisMoment'>{{getDate()}}</h3>
-    <ul id='footerLinks'>
+    <ul class='footer__links'>
       <li v-for='link in links' :key='link.key'>
         <a :href='link.url' :target='link.target'>{{link.name}}</a>
       </li>
