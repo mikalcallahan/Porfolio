@@ -46,9 +46,12 @@ export default {
   },
   methods: {
     getDate() {
-      this.now = moment().format('hh:mm, D MMMM YYYY');
-      setInterval(this.getDate, 5000);
+      this.now = moment().format('D MMMM YYYY');
+      // setInterval(this.getDate, 5000);
       return this.now;
+    },
+    getNow() {
+      this.now = moment().format('hh:mm, D MMMM YYYY');
     },
     iterateKey() {
       this.key = this.key + 1;
