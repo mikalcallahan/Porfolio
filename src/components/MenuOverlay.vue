@@ -9,13 +9,13 @@
       v-for='link in routerLinks'
       :key='link.key'
       :to='link.url'
-      @click.native='changeState'>
+      @click.native='animateMenu'>
       <a>{{link.name}}</a>
     </router-link>
     <li
       v-for='link in externalLinks'
       :key='link.key'
-      @click='changeState'>
+      @click='animateMenu'>
       <a :href='link.url'>{{link.name}}</a>
     </li>
   </ul>

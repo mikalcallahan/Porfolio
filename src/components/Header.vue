@@ -23,7 +23,8 @@ import '@/styles/header.scss';
 
 import { mapGetters, mapMutations } from 'vuex';
 import anime from 'animejs';
-import MenuOverlay from '@/components/MenuOverlay.vue';
+
+const MenuOverlay = () => import('@/components/MenuOverlay.vue');
 
 export default {
   name: 'Header',
