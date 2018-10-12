@@ -89,7 +89,7 @@
   display: none;
   width: 100%;
   img {
-    height: auto;
+    height: 100%; // fix stretching in Chrome
     opacity: 0.85;
     min-height: 0;
     width: 100%;
