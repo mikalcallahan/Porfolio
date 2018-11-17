@@ -30,8 +30,8 @@ export default new Router({
     },
     {
       path: '/',
-      name: 'Home',
-      component: ComingSoon,
+      name: 'About',
+      component: About,
     },
     {
       path: '/portfolio',

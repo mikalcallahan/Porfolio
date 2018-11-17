@@ -1,26 +1,26 @@
 <!-- About Page -->
-
 <template>
   <div class="about">
-    <h1>Mikal Callahan</h1>
-    <p>
-    je suis un programmeur et concepteur creatif avec un accent sur les conceptions
-    belles et functionnelles associées á des codes intelligents et clairs.
-    </P>
-    <p>je programmais et concept le web (&mobile) depuis deux mil seize et utilise</p>
-    <ul>
-      <!-- <li :for='tool in tools' :key='item.name'> -->
-      <li v-for='tool in tools' :key='tool.name'>
-        {{tool.name}}
-      </li>
-    </ul>
-    <p>
-    J'aime travailler sur des projets avec d'autres et aider leurs visions á prendre vie.
-    </p>
-    <p>
-      Je prends des photos, fais la musique, écris. Je suis passionné par l'environnement, les gens
-      , la nature, les bicyclettes, l'art, et les animaux.
-    </p>
+    <h1 class='title'>Mikal Callahan</h1>
+    <h3 class='subtitle'>Software development, Ui/Ux design.</h3>
+    <div class='about en'>
+      <p class='about__description'>
+      I am a software developer and ui/ux designer in love with the process of designing
+      and developing user experiences.
+      I create full-stack solutions to web oriented needs, from e-commerce to web apps.
+      Each partnership is different and the values and needs of those I work with
+      always come first.
+      After our goals have been defined I develop a roadmap for the project,
+      iterate through designs, then development.
+      I have had the pleasure of working with wonderful people including Bettina Heinz,
+      Adaptive Web Studio, Heavenly Gift Baskets, and Tiled.
+      </p>
+      <img class='about__photo' src=''/>
+      <ul class='about__services'>
+
+      </ul>
+    </div>
+    <div class='about fr'></div>
   </div>
 </template>
 
@@ -34,6 +34,24 @@ export default {
   components: {},
   data() {
     return {
+      services: [
+        {
+          name: 'Ui/Ux design',
+          desc: 'User Centered Modern Designs',
+        },
+        {
+          name: 'Full-Stack Development',
+          desc: 'Front-end, Back-end, or both I’ve got you covered',
+        },
+        {
+          name: 'SEO/E-Commerce',
+          desc: 'Helping you stay on top of the seach engines',
+        },
+        {
+          name: 'Consulting',
+          desc: 'If you just want some advince',
+        },
+      ],
       tools: [
         { name: 'react, vue.js, react native' },
         { name: 'scss, stylus' },
