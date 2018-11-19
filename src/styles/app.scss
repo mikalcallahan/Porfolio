@@ -35,9 +35,14 @@ body {
   display: grid;
   justify-content: center;
   // flex-wrap: wrap;
-  grid-template-columns: repeat(12, [col] 1fr);
+  grid-template-columns: repeat(16, [col] 1fr);
   grid-column-gap: 20px;
-  grid-template-rows: repeat(12, [row] 1fr);
+  // grid-template-rows: repeat(12, [row] 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+  'hd hd hd hd hd hd hd hd hd hd hd hd hd hd hd hd'
+  'mn mn mn mn mn mn mn mn mn mn mn mn mn mn mn mn'
+  'ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft';
   height: 100%;
   // padding: 0 2.0rem;
   overflow-y:hidden;

@@ -4,6 +4,7 @@
     <h1 class='title'>Mikal Callahan</h1>
     <h3 class='subtitle'>Software development, Ui/Ux design.</h3>
     <div class='about en'>
+      <!--
       <p class='about__description'>
       I am a software developer and ui/ux designer in love with the process of designing
       and developing user experiences.
@@ -17,8 +18,8 @@
       </p>
       <img class='about__photo' src=''/>
       <ul class='about__services'>
-
       </ul>
+      -->
     </div>
     <div class='about fr'></div>
   </div>
