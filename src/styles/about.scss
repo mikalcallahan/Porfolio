@@ -1,5 +1,56 @@
+/* About.scss */
+@import '@/styles/_breakpoints.scss';
+
 .about {
-  grid-column: 1 / 17;
-  grid-row: 1 / 13;
+  background-color: #F6F6F6;
+  color: #000;
+  // display: grid;
+  grid-area: mn;
+  // grid-template-columns: repeat(2, [col] 1fr);
+  grid-template-rows: auto;
+  grid-column: 1 / 3;
+  // grid-row: 1 / 13;
+  padding: 0 2.5%;
+  overflow-x: hidden;
+  width: 95%;
+  @include breakpoint(small) {
+    grid-template-columns: repeat(16, [col] 1fr);
+    grid-column: 1 / 17;
+  }
+}
+
+.about__intro {
+  grid-row: 2 / 6;
+  .title {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .subtitle {
+    color: #949494;
+    margin-top: auto;
+    padding-top: 2.5%;
+  }
+}
+
+.about__services {
+  list-style-type: none;
+  padding: 0;
+  li {
+    padding: 2.5% 0;
+  }
+  #service__name {
+    margin: 0;
+    padding: 0;
+  }
+  #service__desc {
+    color: #949494;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.about__photo {
+  display: flex;
+  height: auto;
   width: 100%;
 }
