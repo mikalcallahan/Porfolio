@@ -14,8 +14,11 @@
   overflow-x: hidden;
   width: 95%;
   @include breakpoint(small) {
+    display: grid;
     grid-template-columns: repeat(16, [col] 1fr);
-    grid-column: 1 / 17;
+    .about--en {
+      grid-column: 2 / 16;
+    }
   }
 }
 
@@ -29,6 +32,10 @@
     color: #949494;
     margin-top: auto;
     padding-top: 2.5%;
+    @include breakpoint(small) {
+      padding-top: 0.5%;
+    }
+
   }
 }
 

@@ -1,10 +1,10 @@
 <!-- About Page -->
 <template>
   <section class='about'>
-  <div class='about about--en'>
+  <div class='about--en'>
     <div class='about__intro'>
       <h1 class='title'>Mikal Callahan</h1>
-      <h3 class='subtitle'>Software development, Ui/Ux design.</h3>
+      <h3 class='subtitle'>Software development, UI/UX design.</h3>
     </div>
     <p class='about__description description--one'>
       I am a software developer and ui/ux designer in love with the process of designing
@@ -29,7 +29,7 @@
     </p>
     <img class='about__photo' src='@/assets/mikal.jpg'/>
   </div>
-  <div class='about about--fr'>
+  <div class='about--fr'>
 
   </div>
   </section>
@@ -48,7 +48,7 @@ export default {
     return {
       services: [
         {
-          name: 'Ui/Ux design',
+          name: 'UI/UX Design',
           desc: 'User Centered Modern Designs',
         },
         {

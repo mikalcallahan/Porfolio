@@ -30,11 +30,11 @@ body {
 }
 
 #app {
-  // display: flex;
   align-content: start;
-  display: grid;
+  //display: grid;
+  display: flex;
   justify-content: center;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
   grid-template-columns: repeat(2, [col] 1fr);
   grid-column-gap: 20px;
   grid-template-rows: auto 1fr auto;
