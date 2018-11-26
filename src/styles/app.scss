@@ -25,7 +25,7 @@ body {
   color: $font-color;
   display: flex;
   font-family: 'Work Sans', 'Avenir', Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   justify-content: center;
 }
 
@@ -93,6 +93,12 @@ h4 {
   font-size: 2rem;
 }
 
+h5 {
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
 p {
   // font-size: 16px;
   // font-size: 2rem;
@@ -109,16 +115,20 @@ a:hover {
   cursor: pointer;
 }
 
-// see if i don't need this
-/*
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+/* Components */
+
+.button {
+  color: $font-color;
+  font-family: 'Work Sans', 'Avenir', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
-*/
+
+.link {
+  color: $font-color;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+}

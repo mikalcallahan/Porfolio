@@ -1,7 +1,7 @@
 <!-- Header Component -->
 <template>
   <header class='header'>
-    <h3 class='logo'>Mikal</h3>
+    <!-- <h3 class='logo'>Mikal</h3> -->
     <ul class='navigation navigation--router-links'>
       <router-link
         class='navigationLinks navigationLinks--nav-desktop'
@@ -9,7 +9,7 @@
         v-for='link in routerLinks'
         :to='link.url'
         :key='link.key'>
-          <a>{{ link.name }}</a>
+          <a class='link'>{{ link.name }}</a>
       </router-link>
     </ul>
     <button class='button button--sitemap' @click='animateMenu'>Sitemap</button>

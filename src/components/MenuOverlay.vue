@@ -10,13 +10,13 @@
       :key='link.key'
       :to='link.url'
       @click.native='animateMenu'>
-      <a>{{link.name}}</a>
+      <a class='link'>{{link.name}}</a>
     </router-link>
     <li
       v-for='link in externalLinks'
       :key='link.key'
       @click='animateMenu'>
-      <a :href='link.url'>{{link.name}}</a>
+      <a class='link' :href='link.url'>{{link.name}}</a>
     </li>
   </ul>
   </div>

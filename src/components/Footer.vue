@@ -1,7 +1,10 @@
 <!-- Footer Component -->
 <template>
   <footer class='footer'>
-    <h3 id='thisMoment'>{{getDate()}}</h3>
+    <!-- <h3 id='thisMoment'>{{getDate()}}</h3> -->
+    <h5 class='link__email'>
+      <a class='link' href='mailto:mikal.callahan@icloud.com?Subject=Hey%Mikal' target ='_top'>mikal.callahan@icloud</a>
+    </h5>
     <ul class='footer__links'>
       <li v-for='link in links' :key='link.key'>
         <a :href='link.url' :target='link.target'>{{link.name}}</a>

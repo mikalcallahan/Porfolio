@@ -17,6 +17,7 @@
       <h4 id='service__desc'>{{ service.desc }}</h4>
     </li>
     </ul>
+    <div class='description__partnerships'>
     <p class='about__description description--two'>
       Each partnership is different and the values and needs of those I work with
       always come first.
@@ -27,6 +28,7 @@
       I have had the pleasure of working with wonderful people including Bettina Heinz,
       Adaptive Web Studio, Heavenly Gift Baskets, and Tiled.
     </p>
+    </div>
     <img class='about__photo' src='@/assets/mikal.jpg'/>
   </div>
   <div class='about--fr'>

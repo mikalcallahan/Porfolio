@@ -42,8 +42,14 @@
 .about__services {
   list-style-type: none;
   padding: 0;
+  @include breakpoint(small) {
+    padding: 2.5% 0;
+  }
   li {
     padding: 2.5% 0;
+    @include breakpoint(small) {
+      padding: 1% 0;
+    }
   }
   #service__name {
     margin: 0;
@@ -56,8 +62,12 @@
   }
 }
 
+.description__partnerships {
+  padding: 2.5% 0;
+}
+
 .about__photo {
   display: flex;
   height: auto;
-  width: 100%;
+  width: 80%;
 }

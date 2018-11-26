@@ -1,9 +1,10 @@
 /* Footer Styling */
 @import '@/styles/_breakpoints.scss';
+@import '@/styles/_colors.scss';
 
 .footer {
   align-items: center;
-  background-color: white;
+  background-color: $background-color;
   color: black;
   display: flex;
   flex-wrap: nowrap;
@@ -16,8 +17,13 @@
   z-index: 5;
 }
 
-#thisMoment {
+.link__email {
+  // text-decoration: none;
   width: 100%;
+  a {
+    // color: $font-color; 
+    // text-decoration: none;
+  }
   @include breakpoint(large) {
     width: 50%;
   }
@@ -34,7 +40,7 @@
       display: flex;
       font-size: 12px;
       font-size: 1.2rem;
-      font-weight: bold;
+      font-weight: 600;
       justify-content: flex-end;
       padding-left: 2.5rem;
       width: auto;
